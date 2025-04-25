@@ -17,5 +17,6 @@ Zep 화면에서 video 갯수를 확인하여 알림을 줍니다.
 - 기본 볼륨 설정이 0.5 인데 확인해보시고 content.js > videoAlarmSound.volume 값 수정, popup.html > volumeSilider의 기본 값 수정하셔서 사용하시면 될 것 같습니다.
 
 ### 텔레그램
+- [content.js](content.js) 에서 텔레그램 값 수정
 - 상단의 {{BOT_TOKEN}}, {{CHAT_ID}} 를 본인에 맞게 수정해주세요
 [참고사항](https://blog.naver.com/lifelectronics/223198582215)
