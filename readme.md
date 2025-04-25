@@ -19,4 +19,8 @@ Zep 화면에서 video 갯수를 확인하여 알림을 줍니다.
 ### 텔레그램
 - [content.js](content.js) 에서 텔레그램 값 수정
 - 상단의 {{BOT_TOKEN}}, {{CHAT_ID}} 를 본인에 맞게 수정해주세요
-[참고사항](https://blog.naver.com/lifelectronics/223198582215)
+- [참고사항](https://blog.naver.com/lifelectronics/223198582215)
+- 텔레그램은 동일 방문자는 10분동안 다시 울리지않습니다.
+- ![image1.png](image/image1.png)
+- 방문자 초기화 하면 다시 초기화되어 알람이 울립니다.
+- ![img.png](image/img.png)
