@@ -1,0 +1,78 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zep Video Checker</title>
+    <style>
+        .toggle-wrapper {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 25px;
+            outline: 2px solid #ccc;
+            border-radius: 25px;
+            transition: outline-color 0.3s;
+            margin-bottom: 10px;
+        }
+
+        .toggle-wrapper.active {
+            outline-color: #4caf50;
+        }
+
+        .toggle-slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+        }
+
+        .toggle-slider:before {
+            position: absolute;
+            content: "";
+            height: 20px;
+            width: 20px;
+            left: 2.5px;
+            bottom: 2.5px;
+            background-color: white;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+
+        .toggle-wrapper.active .toggle-slider {
+            background-color: #4caf50;
+        }
+
+        .toggle-wrapper.active .toggle-slider:before {
+            transform: translateX(25px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Zep Video Checker</h1>
+    <div>
+        <label>알림</label>
+        <div id="toggle-alarm" class="toggle-wrapper">
+            <div class="toggle-slider"></div>
+        </div>
+    </div>
+    <div>
+        <label>텔레그램</label>
+        <div id="toggle-telegram" class="toggle-wrapper">
+            <div class="toggle-slider"></div>
+        </div>
+    </div>
+    <div>
+        <label for="volume-slider">Volume:</label>
+        <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="0.5" />
+    </div>
+    <div>
+        <p>방문자 수: <span id="visitor-count">0</span></p>
+        <button id="clear-visitors">방문자 초기화</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
